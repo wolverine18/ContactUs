@@ -1,0 +1,73 @@
+﻿:root {
+    --blue: #0087AA;
+    --white: #FFFFFF;
+    --text: #4A4A4A;
+    --btnHover: #1997B7;
+}
+
+.container {
+    font-family: Arial;
+    max-width: 500px;
+    margin: auto;
+    color: var(--text);
+}
+
+.input {
+    font-size: 16px;
+    font-family: Arial;
+    height: 36px;
+    background-color: var(--white);
+    border-color: var(--blue);
+    border-style: solid;
+    border-width: 2px;
+    /*Need to subtract 4px to account for the border width*/
+    width: calc(100% - 4px);
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.input:focus {
+    outline: none
+}
+
+.message {
+    height: 100px;
+}
+
+.errorMsg {
+    color: red;
+}
+
+form {
+    width: 100%
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+table {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+    height: 36px;
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100%;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--btnHover);
+}
+
+textarea {
+    resize: none;
+}
